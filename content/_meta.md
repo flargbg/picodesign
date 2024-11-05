@@ -1,5 +1,5 @@
 ---
-Logo: image/roland-rottenstein.jpg
+Logo: image/rollemedalj.jpg
 Tagline: Min portofolio.
 Social:
     - title: Link till min github repo.
