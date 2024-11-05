@@ -1,5 +1,5 @@
 ---
-Logo: image/rollemedalj.jpg
+Logo: image/rolle.jpg
 Tagline: Min portofolio.
 Social:
     - title: Link till min github repo.
