@@ -1,8 +1,11 @@
 ---
-Logo: image/rolle.jpg
+Logo: image/logo.png
 Tagline: Min portofolio.
 Social:
-    - title: Link till min github repo.
+    - title: Länk till min github repo.
       url: https://github.com/flargbg/picodesign
-      icon: github
+      icon: fab fa-github
+      codetitle: Länk till min codepen.
+      codeurl: https://codepen.io/flargbg
+      codeicon: fas fa-code
 ---
