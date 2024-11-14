@@ -6486,19 +6486,14 @@ pre code {
 }
 
 .main {
-  width: 60%;
+  width: 80%;
 }
 
 .footer {
   background-color: #ff8102;
 }
 
-.post {
-  max-width: 300px;
-  height: auto;
-}
-
-@media (max-width: 600px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .header {
     flex-direction: column;
   }
@@ -6512,9 +6507,48 @@ pre code {
   img {
     max-width: 100%;
   }
+  .post {
+    grid-template-columns: auto;
+  }
 }
+.post {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: auto;
+  height: auto;
+  gap: 2em;
+}
+
+.postWrapper {
+  position: relative;
+  min-width: 300px;
+  box-shadow: 0 8px 40px rgba(25, 20, 10, 0.2470588235);
+}
+
+.postWrapper h3, .postWrapper p {
+  padding: 0 1em;
+}
+
+.postWrapper h3 {
+  margin-top: 1em;
+}
+
+.postWrapper, .postWrapper img {
+  border-top-right-radius: 5em;
+  border-top-left-radius: 1em;
+}
+
+.date {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  background-color: #19140a;
+  color: #fff;
+}
+
 * {
   font-family: "Roboto", sans-serif;
+  font-size: 100%;
 }
 
 h1,
@@ -6524,6 +6558,7 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans", sans-serif;
+  margin: 0 0 0.2em 0;
 }
 
 body {
@@ -6535,10 +6570,11 @@ body {
 }
 
 a {
-  color: #ff0202;
+  font-size: 1.2em;
+  color: #ce0b0b;
 }
 a:hover {
-  color: #ffff02;
+  color: #ff0202;
 }
 
 .nav a {
@@ -6546,4 +6582,11 @@ a:hover {
 }
 .nav a:hover {
   color: #ff0202;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  margin: 0 0 2em 0;
 }

@@ -5,13 +5,18 @@
 
     <div class="main" role="main">
         {{ content }}
-         {% for page in pages("blog")|sort_by("time")|reverse if not page.hidden %}
         <div class="post">
-            <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-            <img class="blogImage" src="{{ assets_url }}/img/{{ page.author }}.png" width="300" height="169">
-            <p class="excerpt">{{ page.description }}</p>
-        </div>
+         {% for page in pages("blog")|sort_by("time")|reverse if not page.hidden %}
+        
+            <div class="postWrapper">
+                <p class="date">{{ page.date_formatted }}</p>
+                <img class="blogImage" src="{{ assets_url }}/img/{{ page.author }}.png" width="300" height="169">
+                <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+                <p class="excerpt">{{ page.description }}</p>
+            </div>
+        
         {% endfor %}
+        </div>
     </div>
     
     {% include 'incl/footer.twig' %}

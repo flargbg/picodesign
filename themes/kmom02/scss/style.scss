@@ -8,15 +8,16 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'blockquotes';
 @import 'code';
-@media (max-width:600px) {
-  @import 'responsive';
-}
+@import 'responsive';
+@import 'blogg.scss';
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
 * {
   font-family: 'Roboto', sans-serif;
+  font-size:100%;
 }
 
 h1,
@@ -26,6 +27,7 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', sans-serif;
+  margin:0 0 0.2em 0;
 }
 
 body {
@@ -36,9 +38,10 @@ body {
   color: $font-color;
 }
 a {
-  color:$hover-color;
+  font-size:1.20em;
+  color:$link-color;
   &:hover {
-    color:$accent-color;
+    color:$hover-color;
   }
 }
 .nav a {
@@ -47,4 +50,10 @@ a {
   &:hover {
     color: $hover-color;
   }
+}
+p {
+  font-size:1em;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  margin:0 0 2em 0;
 }

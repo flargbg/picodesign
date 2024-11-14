@@ -1,0 +1,30 @@
+.post {
+    display:grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: auto;
+    height:auto;
+    gap:2em;
+  }
+  .postWrapper {
+    position: relative;
+    min-width:300px;
+    box-shadow: 0 8px 40px $shadow-color;
+  }
+  .postWrapper h3, .postWrapper p {
+    padding:0 1em;
+  }
+  .postWrapper h3 {
+    margin-top:1em;
+  }
+  .postWrapper, .postWrapper img {
+    border-top-right-radius: 5em;
+    border-top-left-radius: 1em;
+  }
+  .date {
+    position: absolute;
+    top:1em;
+    left:0;
+    background-color: $background-alternative-color;
+    color: $font-alternative-color;
+  }
+  
