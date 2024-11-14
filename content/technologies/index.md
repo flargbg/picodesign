@@ -1,5 +1,5 @@
 ---
 Title: Tech
-Template: tech-index
+Template: technologies
 Description: Mitt techstack
 ---

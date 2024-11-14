@@ -6508,7 +6508,7 @@ pre code {
     max-width: 100%;
   }
   .post {
-    grid-template-columns: auto;
+    grid-template-columns: auto !important;
   }
 }
 .post {
