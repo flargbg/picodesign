@@ -9,7 +9,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'blockquotes';
 @import 'code';
 @import 'responsive';
-@import 'blogg.scss';
+@import 'blogg';
 
 
 
@@ -17,7 +17,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 * {
   font-family: 'Roboto', sans-serif;
-  font-size:100%;
+  font-size: 100%;
 }
 
 h1,
@@ -27,7 +27,7 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', sans-serif;
-  margin:0 0 0.2em 0;
+  margin: 0 0 0.2em;
 }
 
 body {
@@ -37,13 +37,16 @@ body {
 * {
   color: $font-color;
 }
+
 a {
-  font-size:1.20em;
-  color:$link-color;
+  font-size: 1.2em;
+  color: $link-color;
+
   &:hover {
-    color:$hover-color;
+    color: $hover-color;
   }
 }
+
 .nav a {
   color: $accent-color;
 
@@ -51,9 +54,10 @@ a {
     color: $hover-color;
   }
 }
+
 p {
-  font-size:1em;
+  font-size: 1em;
   line-height: 1.5em;
   letter-spacing: 0.1em;
-  margin:0 0 2em 0;
+  margin: 0 0 2em;
 }
