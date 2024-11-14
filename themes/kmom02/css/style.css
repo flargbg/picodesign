@@ -6493,6 +6493,11 @@ pre code {
   background-color: #ff8102;
 }
 
+.post {
+  max-width: 300px;
+  height: auto;
+}
+
 @media (max-width: 600px) and (max-width: 767px) {
   .header {
     flex-direction: column;
@@ -6540,6 +6545,5 @@ a:hover {
   color: #ffff02;
 }
 .nav a:hover {
-  font-weight: 600;
   color: #ff0202;
 }

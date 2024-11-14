@@ -1,0 +1,20 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        {{ content }}
+         {% for page in pages("blog")|sort_by("time")|reverse if not page.hidden %}
+        <div class="post">
+            <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+            <img class="blogImage" src="{{ assets_url }}/img/{{ page.author }}.png" width="300" height="169">
+            <p class="excerpt">{{ page.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
