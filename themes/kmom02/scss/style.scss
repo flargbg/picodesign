@@ -35,8 +35,12 @@ body {
 * {
   color: $font-color;
 }
-
-a,
+a {
+  color:$hover-color;
+  &:hover {
+    color:$accent-color;
+  }
+}
 .nav a {
   color: $accent-color;
 

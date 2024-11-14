@@ -6504,9 +6504,6 @@ pre code {
   .fa-times {
     color: #ffff02;
   }
-  .main {
-    width: 100%;
-  }
   img {
     max-width: 100%;
   }
@@ -6532,11 +6529,16 @@ body {
   color: #000;
 }
 
-a,
+a {
+  color: #ff0202;
+}
+a:hover {
+  color: #ffff02;
+}
+
 .nav a {
   color: #ffff02;
 }
-a:hover,
 .nav a:hover {
   font-weight: 600;
   color: #ff0202;
