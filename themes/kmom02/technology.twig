@@ -6,7 +6,7 @@
     <div class="main" role="main">
         <div class="tech">
             {{ content }}
-            {% for page in pages("technologies")|sort_by("time") %}
+            {% for page in pages("technology")|sort_by("time") %}
             <div class="techwrapper {{ page.title }}">
                 <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
                 <p class="excerpt">{{ page.description }}</p>
