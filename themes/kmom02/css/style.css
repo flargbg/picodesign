@@ -6493,6 +6493,29 @@ pre code {
   background-color: #ff8102;
 }
 
+.aside {
+  display: flex;
+  flex-direction: row;
+}
+
+.asidecontent {
+  position: relative;
+  margin-left: 1em;
+  width: 80%;
+  font-size: 1em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  max-width: 10%;
+  border-right: 1px dashed #19140a;
+  padding-right: 0.5em;
+}
+.links.links a {
+  margin-bottom: 1em;
+}
+
 @media (max-width: 767px) {
   .header {
     flex-direction: column;
@@ -6510,40 +6533,102 @@ pre code {
   .post {
     grid-template-columns: auto !important;
   }
+  .postwrapper {
+    width: 300px;
+  }
+  .tech {
+    grid-template-columns: auto !important;
+    grid-template-rows: auto !important;
+  }
+  .techwrapper {
+    grid-column-start: 1 !important;
+    grid-column-end: auto !important;
+    width: auto !important;
+    grid-row-start: auto !important;
+  }
+  .links {
+    max-width: 20% !important;
+  }
+  .links.links a {
+    font-size: 0.8em;
+  }
 }
 .post {
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-columns: 300px 300px 300px;
   grid-template-rows: auto;
   height: auto;
   gap: 2em;
 }
 
-.postWrapper {
+.postwrapper {
   position: relative;
-  min-width: 300px;
   box-shadow: 0 8px 40px rgba(25, 20, 10, 0.2470588235);
 }
 
-.postWrapper h3, .postWrapper p {
+.postwrapper h3,
+.postwrapper p {
   padding: 0 1em;
 }
 
-.postWrapper h3 {
+.postwrapper h3 {
   margin-top: 1em;
 }
 
-.postWrapper, .postWrapper img {
+.postwrapper,
+.postwrapper img {
   border-top-right-radius: 5em;
   border-top-left-radius: 1em;
 }
 
-.date {
-  position: absolute;
-  top: 1em;
-  left: 0;
-  background-color: #19140a;
-  color: #fff;
+.tech {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  height: auto;
+  gap: 2em;
+}
+
+.techwrapper {
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(25, 20, 10, 0.2470588235);
+  padding: 24px;
+}
+
+.techwrapper.css {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.techwrapper.html {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-column-end: 4;
+}
+
+.techwrapper.php {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-column-end: 3;
+}
+
+.techwrapper.sqlite {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.techwrapper.python {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.techwrapper.javascript {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.techwrapper.git {
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 
 * {
@@ -6558,7 +6643,7 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans", sans-serif;
-  margin: 0 0 0.2em 0;
+  margin: 0 0 0.2em;
 }
 
 body {
@@ -6584,9 +6669,13 @@ a:hover {
   color: #ff0202;
 }
 
-p {
+dt {
+  font-size: 1.2em;
+}
+
+p, dd {
   font-size: 1em;
   line-height: 1.5em;
   letter-spacing: 0.1em;
-  margin: 0 0 2em 0;
+  margin: 0 0 2em;
 }

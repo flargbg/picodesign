@@ -4,6 +4,7 @@
     {% include 'incl/nav.twig' %}
 
     <div class="main" role="main">
+
         {{ content }}
         <div class="post">
          {% for page in pages("blog")|sort_by("time")|reverse if not page.hidden %}
@@ -12,6 +13,8 @@
                 <img class="blogImage" src="{{ assets_url }}/img/{{ page.author }}.png" width="300" height="169">
                 <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
                 <p class="excerpt">{{ page.description }}</p>
+            </div>
+            <div>
             </div>
         
         {% endfor %}

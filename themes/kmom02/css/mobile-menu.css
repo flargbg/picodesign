@@ -51,6 +51,6 @@
         cursor: pointer;
     }
     .main {
-        width:80% !important;
+        width:auto !important;
     }
 }

@@ -3,6 +3,7 @@ Title: The struggle is real
 Date: 2024-11-14
 Author: relaxing
 Description: Från en simpel testsida blev detta ett litet tips & tricks för andra läsare. Här kan du läsa om hur jag formatterade mitt blog post.
+Template: blog
 ---
 
 Första bloggen (test)

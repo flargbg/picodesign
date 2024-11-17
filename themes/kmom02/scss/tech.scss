@@ -1,0 +1,49 @@
+.tech {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  height: auto;
+  gap: 2em;
+}
+
+.techwrapper {
+  border-radius: 20px;
+  box-shadow: 0 8px 40px $shadow-color;
+  padding: 24px;   
+}
+
+.techwrapper.css {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.techwrapper.html {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-column-end: 4;
+}
+
+.techwrapper.php {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-column-end: 3;
+}
+
+.techwrapper.sqlite {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.techwrapper.python {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.techwrapper.javascript {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.techwrapper.git {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}

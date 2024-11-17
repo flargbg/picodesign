@@ -10,6 +10,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'code';
 @import 'responsive';
 @import 'blogg';
+@import 'tech';
 
 
 
@@ -55,7 +56,12 @@ a {
   }
 }
 
-p {
+dt {
+  font-size: 1.2em;
+}
+
+p,
+dd {
   font-size: 1em;
   line-height: 1.5em;
   letter-spacing: 0.1em;

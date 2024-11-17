@@ -3,6 +3,7 @@ Title: Idag
 Date: 2024-11-14
 Author: road
 Description: Började idag kika på kmom03, lekte lite med bloggfunktion och hittade lite roliga sätt att häntera filer.
+Template: blog
 ---
 
 Blir att utforska grids

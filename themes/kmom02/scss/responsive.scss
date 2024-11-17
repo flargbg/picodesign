@@ -19,4 +19,28 @@
   .post {
     grid-template-columns: auto !important;
   }
+
+  .postwrapper {
+    width: 300px;
+  }
+
+  .tech {
+    grid-template-columns: auto !important;
+    grid-template-rows: auto !important;
+  }
+
+  .techwrapper {
+    grid-column-start: 1 !important;
+    grid-column-end: auto !important;
+    width: auto !important;
+    grid-row-start: auto !important;
+  }
+
+  .links {
+    max-width: 20% !important;
+
+    &.links a {
+      font-size: 0.8em;
+    }
+  }
 }
