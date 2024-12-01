@@ -6465,7 +6465,7 @@ pre code {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #19140a;
+  background-color: #333;
 }
 
 .site-header {
@@ -6475,7 +6475,7 @@ pre code {
 
 .site-header h1,
 .site-header p {
-  color: #fff;
+  color: #f8f4f1;
   margin-left: 16px;
 }
 
@@ -6490,7 +6490,7 @@ pre code {
 }
 
 .footer {
-  background-color: #ff8102;
+  background-color: #333;
 }
 
 .aside {
@@ -6509,7 +6509,7 @@ pre code {
   display: flex;
   flex-direction: column;
   max-width: 10%;
-  border-right: 1px dashed #19140a;
+  border-right: 1px dashed #333;
   padding-right: 0.5em;
 }
 .links.links a {
@@ -6563,7 +6563,7 @@ pre code {
 
 .postwrapper {
   position: relative;
-  box-shadow: 0 8px 40px rgba(25, 20, 10, 0.2470588235);
+  box-shadow: 0 8px 40px rgba(248, 244, 241, 0.2588235294);
 }
 
 .postwrapper h3,
@@ -6590,7 +6590,7 @@ pre code {
 
 .techwrapper {
   border-radius: 20px;
-  box-shadow: 0 8px 40px rgba(25, 20, 10, 0.2470588235);
+  box-shadow: 0 8px 40px rgba(248, 244, 241, 0.2588235294);
   padding: 24px;
 }
 
@@ -6647,26 +6647,26 @@ h6 {
 }
 
 body {
-  background-color: #f8f4f1;
+  background-color: #000;
 }
 
 * {
-  color: #000;
+  color: #f8f4f1;
 }
 
 a {
   font-size: 1.2em;
-  color: #ce0b0b;
+  color: #ffff02;
 }
 a:hover {
-  color: #ff0202;
+  color: #ffff20;
 }
 
 .nav a {
   color: #ffff02;
 }
 .nav a:hover {
-  color: #ff0202;
+  color: #ffff20;
 }
 
 dt {
@@ -6683,4 +6683,8 @@ dd {
 
 img {
   border-radius: 20px;
+}
+
+code {
+  background: #000;
 }

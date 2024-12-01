@@ -4,7 +4,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 @import '../../node_modules/normalize.css/normalize';
-@import 'variables';
+@import 'variables-dark';
 
 @import 'blockquotes';
 @import 'code';
@@ -68,7 +68,16 @@ dd {
   margin: 0 0 2em;
 }
 img {
-  border-radius: 20px;
+    border-radius: 20px;
+  }
+code {
+    background: #000;
+}
+pre {
+    background: #000;
+}
+.footer, .header {
+    box-shadow: 0 0 10px $shadow-color;
 }
 .screenshot {
   width:1024px;
