@@ -28,6 +28,43 @@
     grid-template-columns: auto !important;
     grid-template-rows: auto !important;
   }
+  .cars {
+    grid-template-columns: 300px !important;
+    grid-template-rows: auto !important;
+  }
+  .f1, .lights, .orange, .darkcar, .rightside, .redcar, .mustang, .videoiframe {
+    grid-column-start: 1 !important;
+  }
+  .videoiframe {
+    width:300px;
+    height:auto;
+  }
+  .rightside {
+    grid-row-start: 2 !important;
+  }
+  .redcar {
+    grid-row-start: 3 !important;
+  }
+  .orange {
+    grid-row-start: 4 !important;
+  }
+  .darkcar {
+    grid-row-start: 5 !important;
+  }
+  .lights {
+    grid-row-start: 6 !important;
+    grid-row-end: 7 !important;
+  }
+  .f1 {
+    grid-row-start: 7 !important;
+  }
+  .videoiframe {
+    grid-row-start: 8 !important;
+  }
+  .mustang {
+    grid-row-start: 1 !important;
+  }
+
 
   .techwrapper {
     grid-column-start: 1 !important;

@@ -6465,7 +6465,7 @@ pre code {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #19140a;
+  background-color: #FAF5F9;
 }
 
 .site-header {
@@ -6475,7 +6475,7 @@ pre code {
 
 .site-header h1,
 .site-header p {
-  color: #fff;
+  color: #4F0C44;
   margin-left: 16px;
 }
 
@@ -6490,7 +6490,7 @@ pre code {
 }
 
 .footer {
-  background-color: #ff8102;
+  background-color: #DBD7DB;
 }
 
 .aside {
@@ -6509,7 +6509,7 @@ pre code {
   display: flex;
   flex-direction: column;
   max-width: 10%;
-  border-right: 1px dashed #19140a;
+  border-right: 1px dashed #FAF5F9;
   padding-right: 0.5em;
 }
 .links.links a {
@@ -6525,7 +6525,7 @@ pre code {
   }
   .fa-bars,
   .fa-times {
-    color: #ffff02;
+    color: #4F0C44;
   }
   img {
     max-width: 100%;
@@ -6552,6 +6552,10 @@ pre code {
   .links.links a {
     font-size: 0.8em;
   }
+  .screenshot {
+    width: 360px;
+    height: auto;
+  }
 }
 .post {
   display: grid;
@@ -6563,7 +6567,7 @@ pre code {
 
 .postwrapper {
   position: relative;
-  box-shadow: 0 8px 40px rgba(25, 20, 10, 0.2470588235);
+  box-shadow: 0 8px 40px rgba(248, 244, 241, 0.2588235294);
 }
 
 .postwrapper h3,
@@ -6590,7 +6594,7 @@ pre code {
 
 .techwrapper {
   border-radius: 20px;
-  box-shadow: 0 8px 40px rgba(25, 20, 10, 0.2470588235);
+  box-shadow: 0 8px 40px rgba(248, 244, 241, 0.2588235294);
   padding: 24px;
 }
 
@@ -6631,6 +6635,12 @@ pre code {
   grid-row-start: 2;
 }
 
+table {
+  max-width: 100%;
+  text-align: left;
+  background-color: red;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   font-size: 100%;
@@ -6647,26 +6657,26 @@ h6 {
 }
 
 body {
-  background-color: #f8f4f1;
+  background-color: #FAF5F9;
 }
 
 * {
-  color: #000;
+  color: #33002A;
 }
 
 a {
   font-size: 1.2em;
-  color: #ce0b0b;
+  color: #7A276D;
 }
 a:hover {
-  color: #ff0202;
+  color: #CF88C3;
 }
 
 .nav a {
-  color: #ffff02;
+  color: #4F0C44;
 }
 .nav a:hover {
-  color: #ff0202;
+  color: #CF88C3;
 }
 
 dt {
@@ -6683,4 +6693,9 @@ dd {
 
 img {
   border-radius: 20px;
+}
+
+.screenshot {
+  width: 1024px;
+  height: auto;
 }
